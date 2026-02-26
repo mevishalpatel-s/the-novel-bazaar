@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Novel Bazaar - Family of book readers</title>
+    <link rel="icon" type="image/svg+xml" href="/fevicon.svg" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- for logo -->
+            <div class="logo">
+                <div class="firstname">
+                    THE NOVEL
+                </div>
+                <div class="lastname">
+                    BAZAAR
+                </div>
+            </div>
+            <!-- for menu bar -->
+            <div class="menu">
+                <input type="checkbox" id="sidebar-active">
+                <label for="sidebar-active" class="open">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <label for="sidebar-active" id="overlay"></label>
+                <div class="links-container">
+                    <label for="sidebar-active" class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <a href="#" id="home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#books">Books</a>
+                    <a href="#new">New Launch</a>
+                    <a href="#best">Best Seller</a>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#login-modal" class="signin-btn">Sign In</a>
+                    <a href="#cart"><i class="fa-brands fa-opencart"></i></a>
+                </div>
+            </div>
+            <!-- for sing in pop up -->
+            <div id="login-modal" class="modal-overlay">
+                <div class="login-card">
+                    <a href="#" class="close-btn">&times;</a>
+                    <h1>Sign In</h1>
+                    <p>A single account for all our user. </p>
+                    <form>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit" class="login-submit">Login</button>
+                    </form>
+                    <div class="separator"><span>OR</span></div>
+                    <button class="google-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg"
+                            alt="Google Logo">
+                        Continue with Google
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- for content sections -->
+    <main>
+        <!-- for home page -->
+        <section id="home">
+            <div class="hero">
+                <h1>A SOFA,</h1>
+                <h1>A GOOD</h1>
+                <h1>BOOK,</h1>
+                <h1>AND YOU.</h1>
+            </div>
+        </section>
+        <!-- for about bookstore section -->
+        <section id="about">
+            <h1>ABOUT OUR BOOKSTORE</h1>
+            <div class="line"></div>
+            <div class="about">
+                <div class="desc">
+                    <h2>THE NOVEL BAZAAR </h2>
+                    <p>Welcome to <strong>The Novel Bazar</strong> - a place where stories live forever and every book
+                        holds a
+                        heartbeat.
+
+                        We believe that books are not just pages bound together, but emotions, memories, and journeys
+                        waiting to be discovered. From the oldest timeless classics that carry the wisdom of generations
+                        to the latest novels that capture today’s dreams, our shelves are filled with stories that
+                        connect hearts across time. <br>
+
+                        At The Novel Bazar, you will find novels in Hindi, English and Urdu because we understand
+                        that every reader feels at home in a different language. Whether you are searching for a
+                        childhood favorite, a rare vintage treasure, or a new story to lose yourself in, we are here to
+                        help you find that special connection. <br>
+
+                        We keep our prices affordable because we believe everyone deserves the joy of reading. A good
+                        book can change a day, a mindset, even a life and we want that magic to be within everyone's
+                        reach. <br> <br>
+
+                        <strong>The Novel Bazar is not just a bookstore — it's family for
+                            readers.
+                        </strong>
+                    </p>
+                </div>
+                <!-- for bookstore image -->
+                <img src="novelbazaar.jpeg" alt="">
+            </div>
+        </section>
+        <!-- for bookstore section -->
+        <section id="books">
+            <h1>ALL BOOKS</h1>
+            <div class="line"></div>
+            <div class="container">
+                <div class="books">
+                    <!-- for perticular book contents -->
+                    <div class="book">
+                        <img src="harry.jpg" alt="">
+                        <a href="/">Harry Potter Series</a>
+                        <p>Price: ₹999.00</p>
+                    </div>
+                    <div class="book">
+                        <img src="october.jpg" alt="">
+                        <a href="/">October Junction</a>
+                        <p>Price: ₹199.00</p>
+                    </div>
+                    <div class="book">
+                        <img src="musafir.jpg" alt="">
+                        <a href="/">Musafir Cafe</a>
+                        <p>Price: ₹199.00</p>
+                    </div>
+                    <div class="book">
+                        <img src="masala.jpg" alt="">
+                        <a href="/">Masala Chai</a>
+                        <p>Price: ₹220.00</p>
+                    </div>
+                    <div class="book">
+                        <img src="ibbe.jpg" alt="">
+                        <a href="/">Ibnebatuti</a>
+                        <p>Price: ₹250.00</p>
+                    </div>
+                    <div class="book">
+                        <img src="gunahon-ka-devta.jpg" alt="">
+                        <a href="/">Gunahon Ka Devta</a>
+                        <p>Price: ₹430.00</p>
+                    </div>
+                </div>
+                <!-- for link to bookstore page  -->
+                <a href="Bookstore/bookstore.html" class="view" target="_blank">View All Books - ></a>
+            </div>
+        </section>
+        <!-- for recently launched book section -->
+        <section id="new" class="best">
+            <h1>Recently Launched</h1>
+            <div class="line"></div>
+            <div class="bestseller">
+                <div class="aboutbest">
+                    <h2>Tension Mat le Yaar</h2>
+                    <p class="author"><i>by "Divya Prakash Dubey"</i></p>
+                    <p class="description"> <strong>Description: </strong>“हर इंसान दो लड़ाइयाँ लड़ रहा है—एक दुनिया से,
+                        और एक ख़ुद से।
+
+                        बस इतना जान लो, तुम अकेले नहीं हो।”
+
+                        यह किताब मोटिवेशन नहीं देती—यह आपको गले लगाती है।
+
+                        टेंशन मत ले यार उन लोगों के लिए है
+
+                        जो सफल दिखते हुए भी भीतर से थके हुए हैं।
+
+                        जो सही रास्ते पर होने के बावजूद खोया हुआ महसूस करते हैं।
+
+                        जो बार-बार खुद से पूछते हैं— मैं कौन हूँ? मैं क्यों हूँ?
+
+                        दिव्य प्रकाश दुबे इस किताब में
+
+                        न गुरु बनते हैं,
+
+                        न कोई लाइफ़ हैक बताते हैं,
+
+                        और न ही कोई रेडीमेड समाधान बेचते हैं।
+
+                        वे अपने असमंजस, असफलताओं, अकेलेपन, करियर की भटकन और जीवन के कठिन सवालों को उसी ईमानदारी से रखते
+                        हैं,
+
+                        जैसे कोई दोस्त देर रात 2 बजे चाय के साथ बात करता है—
+
+                        बिना जज किए, बिना उपदेश दिए।
+
+                        अगर आप इस समय जीवन के किसी मोड़ पर अटके हुए हैं—
+
+                        अगर सवाल ज़्यादा हैं और जवाब कम—
+
+                        तो यह किताब आपको जवाब नहीं देगी,
+
+                        बस इतना याद दिलाएगी कि आप अकेले नहीं हैं।
+
+                        यह किताब उन बातों की जगह बनती है
+
+                        जो माँ-पिता अपने बेटे-बेटी से,
+
+                        दोस्त अपने दोस्त से,
+
+                        छोटा भाई-बहन अपने किसी अपने से
+
+                        कहना चाहते हैं—पर कह नहीं पाते।
+
+                        इसीलिए यह अपनों को देने के लिए एक ख़ूबसूरत तोहफ़ा बन जाती है।
+
+                        यह किताब आपको ‘परफेक्ट’ बनने का दबाव नहीं देती।
+
+                        यह बस आपके कंधे पर हाथ रखकर कहती है—
+
+                        टेंशन मत ले यार।</p>
+                    <h3>
+                        Avarage Public Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </h3>
+                    <p class="buy"><strong>Price: </strong>₹300.00 <a href="/"> Add to Cart</a></p>
+                </div>
+                <div class="imgbest" style="padding: 80px 30px 0 0;">
+                    <img src="tens.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- for bestseller of the year section -->
+        <section id="best" class="best">
+            <h1>Best Seller Of The Year</h1>
+            <div class="line"></div>
+            <div class="bestseller">
+                <div class="aboutbest">
+                    <h2>That Long Silence</h2>
+                    <p class="author"><i>by "Shashi Deshpande"</i></p>
+                    <p class="description"> <strong>Description: </strong>Jay's life comes apart at the seams when her
+                        husband is asked to leave his job while allegations of business malpractice against him are
+                        investigated. Her familiar existence disrupted her husband's reputation in question and their
+                        future as a family in jeopardy, Jaya, a failed writer, is haunted by memories of the past.
+                        Differences with her husband, frustrations in their seventeen-year-old marriage, disappointment
+                        in her two teenage children, the claustrophobia of her childhood and mdash; all begin to
+                        surface. In her small suburban Bombay flat, Jaya grapples with these and other truths about
+                        herself and mdash; among them her failure at writing and her fear of anger. Shashi Deshpande
+                        gives us an exceptionally accomplished portrayal of a woman trying to erase a 'long silence'
+                        begun in childhood and rooted in her and in the constraints of her life.</p>
+                    <h3>
+                        Avarage Public Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </h3>
+                    <p class="buy"><strong>Price: </strong>₹350.00 <a href="/"> Add to Cart</a></p>
+                </div>
+                <div class="imgbest">
+                    <img src="that.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- for best seller of all time section -->
+        <section id="goat" class="best">
+            <h1>Best Seller Of All Time</h1>
+            <div class="line"></div>
+            <div class="bestseller">
+                <div class="aboutbest">
+                    <h2>Gunahon Ka Devta</h2>
+                    <p class="author"><i>by "Dr. Dharmveer Bharati"</i></p>
+                    <p class="description"> <strong>Description: </strong>गुनाहों का देवता - धर्मवीर भारती के इस उपन्यास
+                        का प्रकाशन और इसके प्रति पाठकों का अटूट सम्मोहन हिन्दी साहित्य-जगत् की एक बड़ी उपलब्धि बन गये
+                        हैं। दरअसल, यह उपन्यास हमारे समय में भारतीय भाषाओं की सबसे अधिक बिकनेवाली लोकप्रिय साहित्यिक
+                        पुस्तकों में पहली पंक्ति में है। लाखों-लाख पाठकों के लिए प्रिय इस अनूठे उपन्यास की माँग आज भी
+                        वैसी ही बनी हुई है जैसी कि इसके प्रकाशन के प्रारम्भिक वर्षों में थी।—और इस सबका बड़ा कारण शायद
+                        एक समर्थ रचनाकार की कोई अव्यक्त पीड़ा और एकान्त आस्था है, जिसने इस उपन्यास को एक अद्वितीय कृति
+                        बना दिया है</p>
+                    <h3>
+                        Avarage Public Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </h3>
+                    <p class="buy"><strong>Price: </strong>₹300.00 <a href="/"> Add to Cart</a></p>
+                </div>
+                <div class="imgbest" style="padding: 50px 30px 0 0;">
+                    <img src="devta.jpg" alt="" height="350px" width="270px">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="contact">
+            <div class="contain">
+                <!-- for address and contact informations -->
+                <div class="contact">
+                    <h2>Contact Information</h2>
+                    <p><strong>Phone: </strong>+91 XXXXXXXX05</p>
+                    <p><strong>Email: </strong>thenovelbazaar@gmail.com</p>
+                    <div class="social">
+                        <a href="/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div><br>
+                    <h2>Office Location</h2>
+                    <p>123, Civil-Line Road</p>
+                    <p>Azamgarh, Uttar Pradesh (276130)</p>
+                </div>
+                <!-- for contact us form -->
+                <div class="submit">
+                    <h2>Ask Us Anything</h2>
+                    <form action="">
+                        <input type="text" class="firstname" placeholder="First Name" required>
+                        <input type="text" class="lastname" placeholder="Last Name" required><br>
+                        <input type="email" class="email" placeholder="Enter Your Email" class="email" required><br>
+                        <textarea id="feedback" placeholder="How can we help you ?"></textarea required><br>
+                        <div class="btn">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Submit</button></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- for coyright, term & policy section -->
+        <div class="copy">
+            <div>©2026 Digital Silk. All rights reserved <a href="/">Terms</a><a href="/">Policy</a></div>
+            <div>Developed & Designed by <strong>Vishal SIngh Patel</strong></div>
+        </div>
+    </footer>
+</body>
+
+</html>
